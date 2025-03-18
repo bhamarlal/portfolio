@@ -1,41 +1,746 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bhamar Lal Portfolio</title>
+    <link href="http://fonts.googleapis.com/css?family=Nunito:400,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Hind&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style-liberty.css">
+  </head>
+  <body>
+
+<meta name="robots" content="noindex">
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+<!-- New toolbar-->
+<style>
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+
+#w3lDemoBar.w3l-demo-bar {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  padding: 40px 5px;
+  padding-top:70px;
+  margin-bottom: 70px;
+  background: #0D1326;
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+#w3lDemoBar.w3l-demo-bar a {
+  display: block;
+  color: #e6ebff;
+  text-decoration: none;
+  line-height: 24px;
+  opacity: .6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#w3lDemoBar.w3l-demo-bar span.w3l-icon {
+  display: block;
+}
+
+#w3lDemoBar.w3l-demo-bar a:hover {
+  opacity: 1;
+}
+
+#w3lDemoBar.w3l-demo-bar .w3l-icon svg {
+  color: #e6ebff;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons {
+  margin-top: 30px;
+  border-top: 1px solid #41414d;
+  padding-top: 40px;
+}
+#w3lDemoBar.w3l-demo-bar .demo-btns {
+  border-top: 1px solid #41414d;
+  padding-top: 30px;
+}
+#w3lDemoBar.w3l-demo-bar .responsive-icons a span.fa {
+  font-size: 26px;
+}
+#w3lDemoBar.w3l-demo-bar .no-margin-bottom{
+  margin-bottom:0;
+}
+.toggle-right-sidebar span {
+  background: #0D1326;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #e6ebff;
+  border-radius: 50px;
+  font-size: 26px;
+  cursor: pointer;
+  opacity: .5;
+}
+.pull-right {
+  float: right;
+  position: fixed;
+  right: 0px;
+  top: 70px;
+  width: 90px;
+  z-index: 99999;
+  text-align: center;
+}
+/* ============================================================
+RIGHT SIDEBAR SECTION
+============================================================ */
+
+#right-sidebar {
+  width: 90px;
+  position: fixed;
+  height: 100%;
+  z-index: 1000;
+  right: 0px;
+  top: 0;
+  margin-top: 60px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  overflow-y: auto;
+}
+
+
+/* ============================================================
+RIGHT SIDEBAR TOGGLE SECTION
+============================================================ */
+
+.hide-right-bar-notifications {
+  margin-right: -300px !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+
+
+@media (max-width: 992px) {
+  #w3lDemoBar.w3l-demo-bar a.desktop-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+  #w3lDemoBar.w3l-demo-bar a.tablet-mode{
+      display: none;
+
+  }
+}
+@media (max-width: 568px) {
+  #w3lDemoBar.w3l-demo-bar a.mobile-mode{
+      display: none;
+  }
+  #w3lDemoBar.w3l-demo-bar .responsive-icons {
+      margin-top: 0px;
+      border-top: none;
+      padding-top: 0px;
+  }
+  #right-sidebar,.pull-right {
+      width: 90px;
+  }
+  #w3lDemoBar.w3l-demo-bar .no-margin-bottom-mobile{
+      margin-bottom: 0;
+  }
+}
+</style>
+
+
+<section class="w3l-bootstrap-header">
+  <nav class="navbar navbar-expand-lg navbar-light py-lg-3 py-2">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Bhamar Lal</a>
+    
+    </a> 
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon fa fa-bars"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+</section>
+ <!--  Main banner section -->
+ <section class="w3l-main-banner" id="home">
+  <div class="companies20-content">
+    <div class="companies-wrapper">
+        <div class="item">
+         
+            <div class="slider-info banner-view text-center" style="background-image: url('assets/images/c6.jpeg');">
+              <div class="banner-info container">
+                <img src="assets/images/c4.jpeg" alt="about image" class="img-fluid" width="100px"; height="100px">
+                <h3 class="banner-text mt-5">Hello, I’m Bhamar Lal
+                  </h3>
+                  <p class="my-4 mb-5">Web Developer</p><br>
+               
+              </div>
+            </div>
+          
         </div>
-    </nav>
+    </div>
+  </div>
+</section>
 
-    <header class="container text-center mt-5">
-        <h1>Hi, I'm [Your Name] 👋</h1>
-        <p>Web Developer | Laravel | Vue | AWS</p>
-    </header>
+ <section class="w3l-about">
+  <div class="skills-bars py-5">
+    <div class="container py-md-3">
+      <div class="heading text-center mx-auto">
+        <h3 class="head">Welcome To My Site</h3>
+        <p class="my-3 head">I am a skilled web developer specializing in both frontend and backend technologies, including Laravel, Vue.js, WordPress, and REST APIs.</p>
+      </div>
+      <div class="row mt-5 pt-3">
+        <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>Design (Photoshop, PSD to WordPress)</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80%; height:4px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>Frontend Development</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 90%; height:4px;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>Backend Development</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 85%; height:4px;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>CMS Development (WordPress, Payment Methods)</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 85%; height:4px;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-6 skills-bar-grids mb-4 pb-2">
+          <h4>Database & Version Control</h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-color" role="progressbar" style="width: 80%; height:4px;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <section class="container mt-5">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="images/project1.jpg" class="card-img-top" alt="Project 1">
-                    <div class="card-body">
-                        <h5 class="card-title">Project 1</h5>
-                        <p class="card-text">A web app built with Laravel & Vue.</p>
-                    </div>
+<section class="w3l-feature-3" id="features">
+	<div class="grid top-bottom" style="background-image: url('assets/images/c7.jpeg');">
+		<div class="container">
+			<div class="heading text-center mx-auto">
+                <h3 class="head text-white">I'm Available For Hire</h3>
+                <p class="my-3 head text-white"> With 6 years of experience in web development, I specialize in building scalable, high-performance applications using modern technologies.</p>
+              </div>
+			<div class="middle-section grid-column text-center mt-5 pt-3">
+				<div class="three-grids-columns">
+					<span class="fa fa-code"></span>
+					<h4>Web Development</h4>
+					<p>Expert in PHP, Laravel, WordPress, CodeIgniter, JavaScript, HTML, CSS, and MySQL, developing dynamic and responsive web applications.</p>
+				</div>
+				<div class="three-grids-columns">
+					<span class="fa fa-cogs"></span>
+					<h4>API Development</h4>
+					<p>Skilled in REST API development using Laravel and Node.js, ensuring seamless integration with mobile apps and third-party services.</p>
+				</div>
+				<div class="three-grids-columns">
+					<span class="fa fa-cloud"></span>
+					<h4>AWS & DevOps</h4>
+					<p>Basic knowledge of AWS cloud services, deployment, and server management to optimize web applications for performance and scalability.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="products-4" id="portfolio">
+  <!-- Products4 block -->
+  <div id="products4-block" class="text-center">
+      <div class="container">
+          <div class="heading text-center mx-auto mb-5">
+              <h3 class="head">My Work & Projects</h3>
+              <p class="my-3 head"> I specialize in web development, API integration, and scalable applications. Here are some of my past projects showcasing my expertise in Laravel, WordPress, and full-stack development.</p>
+          </div>
+          <input id="tab1" type="radio" name="tabs" checked>
+          <label class="tabtle" for="tab1">All Projects</label>
+
+          <input id="tab2" type="radio" name="tabs">
+          <label class="tabtle" for="tab2">Web Development</label>
+
+          <input id="tab3" type="radio" name="tabs">
+          <label class="tabtle" for="tab3">API Development</label>
+
+          <input id="tab4" type="radio" name="tabs">
+          <label class="tabtle" for="tab4">WordPress & Laravel</label>
+
+          <section id="content1" class="tab-content text-left">
+              <div class="d-grid grid-col-3">
+                  <div class="product">
+                      <a href="assets/images/web1.png" data-lightbox="example-set"
+                          data-title="Custom Web Application built with Laravel">
+                          <figure>
+                              <img src="assets/images/web1.png" class="img-responsive" alt="Web Development Project" />
+                          </figure>
+                      </a>
+                  </div>
+                  <div class="product">
+                      <a href="assets/images/web4.png" data-lightbox="example-set"
+                          data-title="Web Application built with Custom WordPress">
+                          <figure>
+                              <img src="assets/images/web4.png" class="img-responsive" alt="Web Development Project" />
+                          </figure>
+                      </a>
+                  </div>
+                  <div class="product">
+                      <a href="assets/images/web5.png" data-lightbox="example-set"
+                          data-title="Web Application built with WordPress Elementor">
+                          <figure>
+                              <img src="assets/images/web5.png" class="img-responsive" alt="Web Development Project" />
+                          </figure>
+                      </a>
+                  </div>
+              </div>
+              <br>
+              <div class="d-grid grid-col-3">
+                <div class="product">
+                    <a href="assets/images/web6.png" data-lightbox="example-set"
+                        data-title="Custom Web Application built with core PHP">
+                        <figure>
+                            <img src="assets/images/web6.png" class="img-responsive" alt="Web Development Project" />
+                        </figure>
+                    </a>
                 </div>
+                
+                <div class="product">
+                    <a href="assets/images/web8.png" data-lightbox="example-set"
+                        data-title="E-commerce website using WordPress & WooCommerce">
+                        <figure>
+                            <img src="assets/images/web8.png" class="img-responsive" alt="API Development" />
+                        </figure>
+                    </a>
+                </div>
+                <div class="product">
+                  <a href="assets/images/web7.png" data-lightbox="example-set"
+                      data-title="E-commerce website using WordPress & WooCommerce">
+                      <figure>
+                          <img src="assets/images/web7.png" class="img-responsive" alt="E-commerce Website" />
+                      </figure>
+                  </a>
+              </div>
+            </div>
+            <br/>
+            <div class="d-grid grid-col-3">
+              
+              <div class="product">
+                  <a href="assets/images/web10.png" data-lightbox="example-set"
+                      data-title="E-commerce website using WordPress & WooCommerce">
+                      <figure>
+                          <img src="assets/images/web10.png" class="img-responsive" alt="CRM Dashboard" />
+                      </figure>
+                  </a>
+              </div>
+              <div class="product">
+                <a href="assets/images/web9.png" data-lightbox="example-set"
+                    data-title="E-commerce website using WordPress & WooCommerce">
+                    <figure>
+                        <img src="assets/images/web9.png" class="img-responsive" alt="Corporate Website" />
+                    </figure>
+                </a>
+            </div>
+              <div class="product">
+                <a href="assets/images/web11.png" data-lightbox="example-set"
+                    data-title="E-commerce website using PHP">
+                    <figure>
+                        <img src="assets/images/web11.png" class="img-responsive" alt="CRM Dashboard" />
+                    </figure>
+                </a>
+            </div>
+          </div>
+          </section>
+          <section id="content2" class="tab-content text-left">
+            <div class="d-grid grid-col-3">
+              <div class="product">
+                <a href="assets/images/web5.png" data-lightbox="example-set"
+                    data-title="Web Application built with WordPress Elementor">
+                    <figure>
+                        <img src="assets/images/web5.png" class="img-responsive" alt="Web Development Project" />
+                    </figure>
+                </a>
+            </div>
+                <div class="product">
+                    <a href="assets/images/web1.png" data-lightbox="example-set"
+                        data-title="Custom Web Application built with Laravel">
+                        <figure>
+                            <img src="assets/images/web1.png" class="img-responsive" alt="Web Development Project" />
+                        </figure>
+                    </a>
+                </div>
+                <div class="product">
+                    <a href="assets/images/web4.png" data-lightbox="example-set"
+                        data-title="Web Application built with Custom WordPress">
+                        <figure>
+                            <img src="assets/images/web4.png" class="img-responsive" alt="Web Development Project" />
+                        </figure>
+                    </a>
+                </div>
+                
+            </div>
+            <br>
+            <div class="d-grid grid-col-3">
+              <div class="product">
+                  <a href="assets/images/web6.png" data-lightbox="example-set"
+                      data-title="Custom Web Application built with core PHP">
+                      <figure>
+                          <img src="assets/images/web6.png" class="img-responsive" alt="Web Development Project" />
+                      </figure>
+                  </a>
+              </div>
+              
+              <div class="product">
+                  <a href="assets/images/web8.png" data-lightbox="example-set"
+                      data-title="E-commerce website using WordPress & WooCommerce">
+                      <figure>
+                          <img src="assets/images/web8.png" class="img-responsive" alt="API Development" />
+                      </figure>
+                  </a>
+              </div>
+              <div class="product">
+                <a href="assets/images/web7.png" data-lightbox="example-set"
+                    data-title="E-commerce website using WordPress & WooCommerce">
+                    <figure>
+                        <img src="assets/images/web7.png" class="img-responsive" alt="E-commerce Website" />
+                    </figure>
+                </a>
+            </div>
+          </div>
+          <br/>
+          <div class="d-grid grid-col-3">
+            
+            <div class="product">
+                <a href="assets/images/web10.png" data-lightbox="example-set"
+                    data-title="E-commerce website using WordPress & WooCommerce">
+                    <figure>
+                        <img src="assets/images/web10.png" class="img-responsive" alt="CRM Dashboard" />
+                    </figure>
+                </a>
+            </div>
+            <div class="product">
+              <a href="assets/images/web11.png" data-lightbox="example-set"
+                  data-title="E-commerce website using PHP">
+                  <figure>
+                      <img src="assets/images/web11.png" class="img-responsive" alt="CRM Dashboard" />
+                  </figure>
+              </a>
+          </div>
+          <div class="product">
+            <a href="assets/images/web9.png" data-lightbox="example-set"
+                data-title="E-commerce website using WordPress & WooCommerce">
+                <figure>
+                    <img src="assets/images/web9.png" class="img-responsive" alt="Corporate Website" />
+                </figure>
+            </a>
+        </div>
+        </div>
+        </section>
+        <section id="content3" class="tab-content text-left">
+          <div class="d-grid grid-col-3">
+              <div class="product">
+                  <a href="assets/images/web1.png" data-lightbox="example-set"
+                      data-title="Custom Web Application built with Laravel">
+                      <figure>
+                          <img src="assets/images/web1.png" class="img-responsive" alt="Web Development Project" />
+                      </figure>
+                  </a>
+              </div>
+             
+              <div class="product">
+                  <a href="assets/images/web5.png" data-lightbox="example-set"
+                      data-title="Web Application built with WordPress Elementor">
+                      <figure>
+                          <img src="assets/images/web5.png" class="img-responsive" alt="Web Development Project" />
+                      </figure>
+                  </a>
+              </div>
+              <div class="product">
+                <a href="assets/images/web4.png" data-lightbox="example-set"
+                    data-title="Web Application built with Custom WordPress">
+                    <figure>
+                        <img src="assets/images/web4.png" class="img-responsive" alt="Web Development Project" />
+                    </figure>
+                </a>
+            </div>
+          </div>
+          <br>
+          <div class="d-grid grid-col-3">
+            <div class="product">
+                <a href="assets/images/web6.png" data-lightbox="example-set"
+                    data-title="Custom Web Application built with core PHP">
+                    <figure>
+                        <img src="assets/images/web6.png" class="img-responsive" alt="Web Development Project" />
+                    </figure>
+                </a>
+            </div>
+            
+            <div class="product">
+                <a href="assets/images/web8.png" data-lightbox="example-set"
+                    data-title="E-commerce website using WordPress & WooCommerce">
+                    <figure>
+                        <img src="assets/images/web8.png" class="img-responsive" alt="API Development" />
+                    </figure>
+                </a>
+            </div>
+            <div class="product">
+              <a href="assets/images/web7.png" data-lightbox="example-set"
+                  data-title="E-commerce website using WordPress & WooCommerce">
+                  <figure>
+                      <img src="assets/images/web7.png" class="img-responsive" alt="E-commerce Website" />
+                  </figure>
+              </a>
+          </div>
+        </div>
+        <br/>
+        <div class="d-grid grid-col-3">
+          <div class="product">
+              <a href="assets/images/web9.png" data-lightbox="example-set"
+                  data-title="E-commerce website using WordPress & WooCommerce">
+                  <figure>
+                      <img src="assets/images/web9.png" class="img-responsive" alt="Corporate Website" />
+                  </figure>
+              </a>
+          </div>
+          <div class="product">
+              <a href="assets/images/web10.png" data-lightbox="example-set"
+                  data-title="E-commerce website using WordPress & WooCommerce">
+                  <figure>
+                      <img src="assets/images/web10.png" class="img-responsive" alt="CRM Dashboard" />
+                  </figure>
+              </a>
+          </div>
+          <div class="product">
+            <a href="assets/images/web11.png" data-lightbox="example-set"
+                data-title="E-commerce website using PHP">
+                <figure>
+                    <img src="assets/images/web11.png" class="img-responsive" alt="CRM Dashboard" />
+                </figure>
+            </a>
+        </div>
+      </div>
+      </section>
+      <section id="content4" class="tab-content text-left">
+        <div class="d-grid grid-col-3">
+            <div class="product">
+                <a href="assets/images/web1.png" data-lightbox="example-set"
+                    data-title="Custom Web Application built with Laravel">
+                    <figure>
+                        <img src="assets/images/web1.png" class="img-responsive" alt="Web Development Project" />
+                    </figure>
+                </a>
+            </div>
+            <div class="product">
+                <a href="assets/images/web4.png" data-lightbox="example-set"
+                    data-title="Web Application built with Custom WordPress">
+                    <figure>
+                        <img src="assets/images/web4.png" class="img-responsive" alt="Web Development Project" />
+                    </figure>
+                </a>
+            </div>
+            <div class="product">
+                <a href="assets/images/web5.png" data-lightbox="example-set"
+                    data-title="Web Application built with WordPress Elementor">
+                    <figure>
+                        <img src="assets/images/web5.png" class="img-responsive" alt="Web Development Project" />
+                    </figure>
+                </a>
             </div>
         </div>
+        <br>
+        <div class="d-grid grid-col-3">
+          <div class="product">
+              <a href="assets/images/web6.png" data-lightbox="example-set"
+                  data-title="Custom Web Application built with core PHP">
+                  <figure>
+                      <img src="assets/images/web6.png" class="img-responsive" alt="Web Development Project" />
+                  </figure>
+              </a>
+          </div>
+          <div class="product">
+              <a href="assets/images/web7.png" data-lightbox="example-set"
+                  data-title="E-commerce website using WordPress & WooCommerce">
+                  <figure>
+                      <img src="assets/images/web7.png" class="img-responsive" alt="E-commerce Website" />
+                  </figure>
+              </a>
+          </div>
+          <div class="product">
+              <a href="assets/images/web8.png" data-lightbox="example-set"
+                  data-title="E-commerce website using WordPress & WooCommerce">
+                  <figure>
+                      <img src="assets/images/web8.png" class="img-responsive" alt="API Development" />
+                  </figure>
+              </a>
+          </div>
+      </div>
+      <br/>
+      <div class="d-grid grid-col-3">
+        <div class="product">
+            <a href="assets/images/web9.png" data-lightbox="example-set"
+                data-title="E-commerce website using WordPress & WooCommerce">
+                <figure>
+                    <img src="assets/images/web9.png" class="img-responsive" alt="Corporate Website" />
+                </figure>
+            </a>
+        </div>
+        <div class="product">
+            <a href="assets/images/web10.png" data-lightbox="example-set"
+                data-title="E-commerce website using WordPress & WooCommerce">
+                <figure>
+                    <img src="assets/images/web10.png" class="img-responsive" alt="CRM Dashboard" />
+                </figure>
+            </a>
+        </div>
+        <div class="product">
+          <a href="assets/images/web11.png" data-lightbox="example-set"
+              data-title="E-commerce website using PHP">
+              <figure>
+                  <img src="assets/images/web11.png" class="img-responsive" alt="CRM Dashboard" />
+              </figure>
+          </a>
+      </div>
+    </div>
     </section>
+      </div>
+  </div>
+  <!-- Products4 block -->
+</div>
 
-    <footer class="text-center mt-5 p-3 bg-dark text-white">
-        © 2025 My Portfolio
-    </footer>
-</body>
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<script src="assets/js/lightbox-plus-jquery.min.js"></script>
+<section class="services-12" id="experience">
+  <div class="form-12-content" style="background-image: url('assets/images/c5.jpeg');">
+      <div class="container">
+          <div class="grid grid-column-2 ">
+              <div class="column1">
+                  <h3 class="mb-5">Experience</h3>
+                  <div class="experience-top">
+                      <h5>Jan 2022 - Present</h5>
+                      <h4>Senior Software Engineer at Legendesk</h4>
+                      <p class="my-3 text-white">Leading software development projects, building web applications, and integrating APIs using Laravel, Vue.js, and modern technologies.</p>
+                  </div>
+                  <div class="experience-top">
+                      <h5>Dec 2020 - Jan 2022</h5>
+                      <h4>Web Developer at ABTACH</h4>
+                      <p class="my-3 text-white">Developed WordPress and PHP-based web solutions, improving website performance and functionality for various clients.</p>
+                  </div>
+                  <div class="experience-top">
+                      <h5>Jun 2019 - Dec 2020</h5>
+                      <h4>Web Developer at Fine Solutions</h4>
+                      <p class="my-3 text-white">Worked on web applications, implementing front-end and back-end features using Laravel, CodeIgniter, and JavaScript frameworks.</p>
+                  </div>
+                  
+              </div>
+              <div class="column2">
+                <div class="experience-top">
+                  <h5>Apr 2018 - Jun 2019</h5>
+                  <h4>Web Developer at Cryptically Developer</h4>
+                  <p class="my-3 text-white">Designed and developed websites with responsive UI, database management, and API integrations using PHP, MySQL, and JavaScript.</p>
+              </div>
+              <div class="experience-top">
+                  <h5>Aug 2017 - Mar 2018</h5>
+                  <h4>Intern at Hidaya Institute of Science and Technology</h4>
+                  <p class="my-3 text-white">Gained hands-on experience in web development, database management, and software troubleshooting.</p>
+              </div>
+                  <h3 class="mb-5">Education</h3>
+                  <div class="experience-top">
+                      <h5>2016</h5>
+                      <h4>BS in Computer Science, University of Sindh, Jamshoro</h4>
+                      <p class="my-3 text-white">Graduated with a focus on software development, database management, and web technologies.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+ 
+ <!-- grids block 5 -->
+ <section class="w3l-footer-29-main" id="footer">
+  <div class="footer-29 text-center">
+      <div class="container">
+        
+        <div class="main-social-footer-29">
+                    
+          <a href="https://www.facebook.com/profile.php?id=100006956406420" class="facebook"><span class="fa fa-facebook"></span></a>
+          <a href="https://www.linkedin.com/in/bhamar-lal-ab0b81145/" class="linkedin"><span class="fa fa-linkedin"></span></a>
+      </div>
+          <div class="bottom-copies text-center">
+              <p class="copy-footer-29">© 2025. All rights reserved</p>
+               
+          </div>
+      </div>
+  </div>
+   <!-- move top -->
+  <button onclick="topFunction()" id="movetop" title="Go to top">
+              <span class="fa fa-angle-up"></span>
+                 </button>
+                 <script>
+                     // When the user scrolls down 20px from the top of the document, show the button
+                     window.onscroll = function () {
+                         scrollFunction()
+                     };
+              
+                     function scrollFunction() {
+                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                             document.getElementById("movetop").style.display = "block";
+                         } else {
+                             document.getElementById("movetop").style.display = "none";
+                         }
+                     }
+              
+                     // When the user clicks on the button, scroll to the top of the document
+                     function topFunction() {
+                         document.body.scrollTop = 0;
+                         document.documentElement.scrollTop = 0;
+                     }
+                 </script>
+                 <!-- /move top -->
+</section>
+<!-- // grids block 5 -->
+<script src="assets/js/jquery-3.3.1.min.js"></script>
+<!-- //footer-28 block -->
+</section>
+
+
+
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'922253fa2cfd4906',t:'MTc0MjI3NTcyMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='../../../../../../cdn-cgi/challenge-platform/h/g/scripts/jsd/f3b948d8acb8/maind41d.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+
 </html>
+
+
+
+
+
+
+
